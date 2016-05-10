@@ -3,6 +3,15 @@
 ![React.js](https://risingstack-blog.s3.amazonaws.com/2016/Jan/react_best_practices-1453211146748.png)
 
 ##Why React?  
+According to the official documentaiton
+> React is a JavaScript library for building user interfaces.  
+> Just the UI: Lots of people use React as the V in MVC. Since React makes no assumptions about the rest of your technology stack, it's easy to try it out on a small feature in an existing project.  
+
+> Virtual DOM: React abstracts away the DOM from you, giving a simpler programming model and better performance. React can also render on the server using Node, and it can power native apps using React Native.  
+
+> Data flow: React implements one-way reactive data flow which reduces boilerplate and is easier to reason about than traditional data binding.  
+
+
 You may be asking yourself why you would want to write a webapp in react if I already know HTML. You may be thinking that writing your view in javascript is ludicrous but as you develop your web app, you will notice that scanning through your HTML can cause a lot of memory management to understand what is going on. For example, a navigation bars, progress bars, jumbotrons can have many classes and semanticaly placed for it to render correctly. React can resolve this by making you write it one time and reuse the component later.
 
 ##My first impression of React.js by building a component
@@ -10,7 +19,7 @@ So I finally got serious and went through the tutorial on facebook’s page for 
 
 
 I decided to create a component from bootstrap. In this case I have created the Jumbotron component from bootstrap.
-[Full Link] (https://gist.github.com/joseph-ortiz/33d841265acd721cb9848af73b610986)
+[Full Code Example Link] (https://gist.github.com/joseph-ortiz/33d841265acd721cb9848af73b610986)
 ```javascript
 class Jumbotron extends React.Component {
   render() {
@@ -26,6 +35,9 @@ class Jumbotron extends React.Component {
 
 React.render(<Jumbotron mainText="Hello, world!" subText="this is the subtext"/>, document.getElementById('main'));
 ```
+
+
+The last line in the code sample uses the function React.render() that takes two paramters. The first paramter takes in a single node to render. In this example, I pass in the Jumbotron Component I created. The second paramter takes in the element in the DOM we will render the app. Here I use plain old javascript to selet the element with id of 'main'.
 
 A React.js component from the surface appears to be a javascript class that extends a React Component. This class object has a minimum of the the render() method. You can even throw ajax in the component.
 Components are self describing. I love how you can navigate through the various components and know where you are in the code. If I’m trying to create a Jumobtron component from bootstrap, I go to the Jumbotron component. For me, components made it easier for me to conceptualize and build.
@@ -141,3 +153,10 @@ What I Learned:
 
 React.js is a beautiful view rendering library with a workflow that helps you build composible and resuable components.
 
+
+
+*Resources
+-  [React Documentation](https://facebook.github.io/react/docs)
+-  [“Thinking in React”](https://facebook.github.io/react/docs/thinking-in-react.html)
+-  [Full CodePen Example Link] (https://gist.github.com/joseph-ortiz/33d841265acd721cb9848af73b610986)
+-  [Facebook Component Tutorial] (https://facebook.github.io/react/docs/tutorial.html)
