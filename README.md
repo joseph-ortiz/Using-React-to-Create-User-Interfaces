@@ -1,6 +1,6 @@
 # Using-React-to-Create-User-Interfaces
 
-Existing problem with user interfaces  
+![React.js](https://risingstack-blog.s3.amazonaws.com/2016/Jan/react_best_practices-1453211146748.png)
 
 ##Why React?  
 You may be asking yourself why you would want to write a webapp in react if I already know HTML. You may be thinking that writing your view in javascript is ludicrous but as you develop your web app, you will notice that scanning through your HTML can cause a lot of memory management to understand what is going on. For example, a navigation bars, progress bars, jumbotrons can have many classes and semanticaly placed for it to render correctly. React can resolve this by making you write it one time and reuse the component later.
